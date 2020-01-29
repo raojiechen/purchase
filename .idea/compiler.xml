@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="purchase-dao" />
+        <module name="purchase-service" />
+        <module name="purchase-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="purchase" target="1.8" />
+      <module name="purchase-dao" target="1.8" />
+      <module name="purchase-service" target="1.8" />
+      <module name="purchase-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
