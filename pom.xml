@@ -36,6 +36,8 @@
 		<mybatis.starter.verison>1.3.1</mybatis.starter.verison>
 		<lombok.version>1.18.6</lombok.version>
 		<starter.test.version>2.1.4.RELEASE</starter.test.version>
+		<!--springboot整合thymeleaf的时候版本名称不能写为thymeleaf.version，因为该标签被占用-->
+        <springboot.thymeleaf.version>2.1.4.RELEASE</springboot.thymeleaf.version>
 	</properties>
 
 	<!-- 版本说明：这里统一管理依赖的版本号 -->
@@ -108,7 +110,12 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
-
+            <!--整合thymeleaf-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+				<version>${springboot.thymeleaf.version}</version>
+            </dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>
