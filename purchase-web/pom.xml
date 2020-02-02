@@ -56,10 +56,9 @@
 			<artifactId>purchase-dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-        <!--自启动Druid管理后台-->
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
+            <artifactId>druid</artifactId>
         </dependency>
 
 	</dependencies>
