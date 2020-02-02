@@ -1,13 +1,28 @@
 package com.purchase.purchaseweb;
 
+import com.cqnu.purchasedao.mapper.StudentMapper;
+import com.cqnu.purchasedao.pojo.Student;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@SpringBootTest
+import java.util.List;
+
+
+@SpringBootTest(classes = PurchaseWebApplication.class)
+@RunWith(SpringJUnit4ClassRunner.class)
 public class PurchaseWebApplicationTests {
+	@Autowired(required = false)
+	private StudentMapper studentMapper;
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
+        List<Student> stuList=studentMapper.queryStuList();
+        for (Student student:stuList){
+            System.out.println(student);
+        }
 	}
 
 }

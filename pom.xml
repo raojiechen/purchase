@@ -104,7 +104,6 @@
                 <version>${mybatis.starter.verison}</version>
             </dependency>
 
-
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -116,6 +115,12 @@
                 <artifactId>spring-boot-starter-thymeleaf</artifactId>
 				<version>${springboot.thymeleaf.version}</version>
             </dependency>
+			<!--自启动Druid管理后台-->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid-spring-boot-starter</artifactId>
+				<version>1.1.10</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>

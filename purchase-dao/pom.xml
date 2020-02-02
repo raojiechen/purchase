@@ -91,6 +91,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+                <!--解决maven编译报错 [找不到符号] [程序包XXX不存在]
+                spring-boot-maven-plugin的插件在工程打包编译时，会生成两种jar包，一
+                种是普通的jar，另一种是可执行jar。默认情况下，这两种jar的名称相同，在不做
+                区分的情况下，普通的jar先生成，可执行jar后生成，所以可执行jar会覆盖普通的ja
+                r,这样就导致自己其他模块在引用时为可执行的jar,导致不能找到具体的代码类，所以
+                包此类错误。-->
+				<configuration>
+					<classifier>exec</classifier>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

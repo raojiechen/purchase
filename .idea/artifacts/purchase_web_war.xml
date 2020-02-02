@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="purchase-web:war">
     <output-path>$PROJECT_DIR$/purchase-web/target</output-path>
-    <root id="archive" name="purchase-web-0.0.1-SNAPSHOT.war">
+    <root id="archive" name="spring-boot-starter-parent-2.1.4.RELEASE.war">
       <element id="artifact" artifact-name="purchase-web:war exploded" />
     </root>
   </artifact>
